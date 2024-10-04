@@ -1,0 +1,72 @@
+body{
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+ 
+#logo{
+    font-family: sans-serif  bebas-Neue nf-Icon;
+    color:#e50914;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 5vw;
+    vertical-align: middle;
+    transform:translateZ(0);
+
+
+   
+}
+.div1{
+    cursor: pointer;
+    padding: 20px;
+    background: transparent;
+
+}
+
+#profile{
+    float:right;
+    overflow: auto;
+}
+ 
+div{
+    float: left;
+    overflow: auto;
+}
+.show{
+    float: left;
+    margin-right: 20px;
+   
+}
+
+ .images{
+    width: 150px;  
+    height: 225px;  
+    object-fit: cover;
+    float:left;
+    padding: 5px;
+    border: 30px solid transparent;
+    transition: transform 0.3s ease;
+ }
+ .images:hover {
+    border-color: #e50914;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #f40612;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix.css" />
+    <link rel="stylesheet" href="div.css" />
+    <script>
+        function toggleMovies(sectionId, buttonId) {
+            const section = document.getElementById(sectionId);
+            const button = document.getElementById(buttonId);
+
+            if (section.style.display === "none") {
+                section.style.display = "block";
+                button.innerText = "See Less";  // Change text to 'See Less' after clicking
+            } else {
+                section.style.display = "none";
+                button.innerText = "See More";  // Reset back to 'See More'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <div id="logo">Netflix</div>
+        <div>Home &nbsp;&nbsp;&nbsp;</div>
+        <div>Tv Show &nbsp;&nbsp;&nbsp;</div>
+        <div>Movie &nbsp;&nbsp;&nbsp;</div>
+        <div>New & Popular &nbsp;&nbsp;&nbsp;</div>
+        <div>My List &nbsp;&nbsp;&nbsp;</div>
+        <div>Browse by Language &nbsp;&nbsp;&nbsp;</div>
+        <img src="Netflix-avatar.png" alt="profile picture" height="30px" width="40px" id="profile" />
+    </div>
+
+    <br /><br /><br /><br />
+
+    <div class="div2">
+        <div class="show">NETFLIX ORIGINALS<br />
+            <img src="netflix original/wednesday netflix.jpg" alt="wednesday" class="images" />
+            <img src="netflix original/stranger thing netflix.jpg" alt="stranger thing" class="images" />
+            <img src="netflix original/delhi crime.jpg" class="images" />
+            <img src="netflix original/money heist.jpg" class="images" />
+            <img src="netflix original/squid game.jpg" class="images" />
+            <img src="netflix original/mismatched.jpg" class="images" />
+            <div id="more-originals" style="display: none;">
+                <img src="netflix original/All_of_Us_Are_Dead.jpeg" class="images" />
+                <img src="netflix original/kathal.jpg" class="images" />
+                <img src="netflix original/narcos.jpg" class="images" />
+                <img src="netflix original/Unstable_TV_Poster.png" class="images" />
+                <img src="netflix original/kung fu panda.jpg" class="images" />
+            </div>
+            <!-- "See More" button -->
+            <button id="see-more-originals" onclick="toggleMovies('more-originals', 'see-more-originals')">See More</button>
+        </div><br />
+
+        <div class="div3">
+            <div class="show">Trending Now<br>
+                <img src="indian movies/chandigarh-kare-aashiqui.avif" class="images" />
+                <img src="indian movies/Barfi!_poster.jpg" class="images" />
+                <img src="indian movies/Doctor g.jpg" class="images" />
+                <img src="indian movies/Major_The_Film.jpg" class="images" />
+                <img src="indian movies/Mission_Majnu.jpg" class="images" />
+                <img src="indian movies/raajneeti.jpg" class="images" />
+                <div id="more-trending" style="display: none;">
+                    
+                    <img src="indian movies/radhey shyam.webp" class="images" />
+                    <img src="indian movies/jindagi na milagi dobara.jpg" class="images" />
+                    <img src="indian movies/yeh jawaani hai deewani.jpg" class="images" />
+                </div>
+                <button id="see-more-trending" onclick="toggleMovies('more-trending', 'see-more-trending')">See More...</button>
+            </div><br />
+
+            <div class="show">Indian Movies<br>
+                <img src="indian movies/jaadugar.jpg" class="images" />
+                <img src="indian movies/bahubali.jpg" class="images" />
+                <img src="indian movies/baaghi.jpg" class="images" />
+                <img src="indian movies/yeh jawaani hai deewani.jpg" class="images" />
+                <img src="indian movies/gabbar.jpg" class="images" />
+                <img src="indian movies/Gangubai_Kathiawadi_film_poster.jpg" class="images" />
+                <div id="more-indian-movies" style="display: none;">
+                    
+                    <img src="indian movies/jersey.jpg" class="images" />
+                    <img src="indian movies/jindagi na milagi dobara.jpg" class="images" />
+                    <img src="indian movies/Barfi!_poster.jpg" class="images" />
+
+                </div>
+                <button id="see-more-indian-movies" onclick="toggleMovies('more-indian-movies', 'see-more-indian-movies')">See More...</button>
+            </div><br />
+
+            <div class="show">Romance:<br />
+                <img src="netflix original/purple heart.png" class="images" />
+                <img src="netflix original/never have i ever.jpg" class="images" />
+                <img src="netflix original/sex education.jpg" class="images" />
+                <img src="netflix original/buisness proposal.jpg" class="images" />
+                <img src="indian movies/yeh jawaani hai deewani.jpg" class="images" />
+
+                <img src="indian movies/Barfi!_poster.jpg" class="images" />
+                 
+                <div id="more-romance" style="display: none;">
+                       <img src="indian movies/radhey shyam.webp" class="images" />
+                    <img src="indian movies/chandigarh-kare-aashiqui.avif" class="images" />
+                    <img src="netflix original/mismatched.jpg" class="images" />
+                </div>
+                <button id="see-more-romance" onclick="toggleMovies('more-romance', 'see-more-romance')">See More...</button>
+            </div><br />
+        </div>
+    </div>
+</body>
+
+</html>
